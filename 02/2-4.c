@@ -8,7 +8,7 @@ int main(void){
   d=6.0; e=7.5;
 
   //加算・減算
-  c=a+b; F=d-e;
+  c=a+b; f=d-e;
   printf("%d %f \n",c,f);
 
   //乗算
