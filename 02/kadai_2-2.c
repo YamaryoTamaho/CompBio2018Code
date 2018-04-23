@@ -6,13 +6,14 @@ int main(void){
   FILE *fp;
   fp=fopen("output.dat","w");
 
-  for(r=1.0;r<3.0;r+=0.1){
-    fprintf(fp,"r=%.1f\n",r);
+  for(r=1.0;r<3.0;r+=0.001){
 
     x1=10.0;
-    for(t=0;t<50;t++){
+    for(t=0;t<300;t++){
     x2=x1+r*(1.0-x1/k)*x1;
-    fprintf(fp,"%.3f\n",x2);
+    if(250<=t){
+      fprintf(fp,"%.3f %.3f\n",r,x2);
+    }
     x1=x2;
     }
   }
