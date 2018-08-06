@@ -23,13 +23,13 @@ int main(void){
   }
 
   //初期設定
-  ///*
+  /*
   cell[50][50]=1;
   cell[51][52]=1;
   cell[50][52]=1;
   cell[49][52]=1;
   cell[49][51]=1;
-  //*/
+  */
 
   for(i=0;i<size;i++){
     for(j=0;j<size;j++){
